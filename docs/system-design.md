@@ -51,18 +51,44 @@ The system is responsible for maintaining accurate user balances, processing ord
 
 ## 2. Main components 
 
-- Frontend
-- API Gateaway 
-- Authentication Service
-- User Service 
-- Wallet Service 
-- Trading Service
-- Matching Engine
-- Order Book
-- Ledger 
-- Block chain integration 
-- Database
-- Massege Queue
+- **Frontend**    
+Web application   
+Mobile application  
+- **API Gateaway**    
+Connection between frontend and backend
+- **Authentication Service**  
+registration   
+log in   
+log out  
+- **User Service**   
+user information  
+- **Wallet Service**   
+Deposit  
+Withdrawal  
+Balance  
+Reserve funds  
+Release funds  
+Transfer  
+- **Trading Service**  
+Create order  
+Cancel order  
+Get order  
+Get open orders  
+Get order history  
+- **Matching Engine**  
+finds compatible BUY and SELL orders and matches them according to the matching rules.
+- **Order Book**  
+list of orders waiting for compatibile offer
+- **Ledger**   
+Private list of transactions - good for knowing how we get that amount on our balance 
+- **Block chain integration**   
+Users address - identificate user
+Private keys  
+Digital signature  
+Public keys checks signature
+
+- **Database**  
+- **Massege Queue**  
 
 ## 3. One order flow
 
@@ -73,6 +99,7 @@ The system is responsible for maintaining accurate user balances, processing ord
 - **RESERVE FUNDS**
 - **MATCHING ENGINE**
 - **ORDER MATHCED**
+- **BLOCKCHAIN CONFIRMATION** (Only for DEPOSIT or WITHDRAWAL)
 - **TRADE EXECUTED**
 - **LEDGER UPDATED**
 - **BALANCES UPDATED**
