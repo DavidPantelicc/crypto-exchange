@@ -26,7 +26,7 @@ Pair:     BTC/USDT
 Price:    100,000 USDT  
 Quantity: 0.5 BTC  
 
-Notice: If the offer user want to make doesn't exist, offer is being pushed to the waiting line until the one of the users make selling offer
+Notice: If the offer user want to make doesn't exist, offer is being pushed to the waiting line until the one of the users make selling offer.
 
 Order - Seller
 
@@ -50,7 +50,6 @@ Seller
 The system is responsible for maintaining accurate user balances, processing orders correctly, and keeping a reliable record of trading activity.
 
 ## 2. Main components 
-//ovo moramo sve da naucimo bar ukratko zasto smo to stavili 
 
 - Frontend
 - API Gateaway 
@@ -66,7 +65,6 @@ The system is responsible for maintaining accurate user balances, processing ord
 - Massege Queue
 
 ## 3. One order flow
-//ovo moramo sve da naucimo bar ukratko zasto smo to stavili 
 
 - **USER**
 - **ORDER**
