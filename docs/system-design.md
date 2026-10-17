@@ -7,6 +7,8 @@
 2. [Product Scope](#2-product-scope)
 3. [Functional Requirements](#3-functional-requirements)
 4. [High-Level Architecture](#4-high-level-architecture)
+5. [Core Concepts](#5-core-concepts)
+
 
 
 ## 1. Introduction
@@ -163,6 +165,24 @@ They share exactly one thing: **every balance change either product causes goes 
 
 
 The exchange uses a persistent relational database to store **users**.
+
+## 5. Core Concepts
+ 
+### 5.1 Assets
+ 
+The exchange custodies three crypto assets in V1: **BTC**, **ETH**, **USDT**. EUR exists only as a fiat pricing/payment currency inside P2P ads 
+ 
+### 5.2 Markets
+ 
+There are two different kinds of "market" in this document, and they must not be confused:
+ 
+| | Spot market | P2P market |
+|---|---|---|
+| Composition | Two custodied crypto assets, e.g. `BTC/USDT` | One custodied crypto asset + one fiat currency, e.g. `BTC/EUR` |
+| Has an Order Book | Yes | No |
+| Price discovery | By matching | Set by the advertiser |
+| V1 examples | `BTC/USDT`, `ETH/USDT` | `BTC/EUR`, `ETH/EUR`, `USDT/EUR` |
+ 
 
 ## 7. Passwords and Protection 
 
